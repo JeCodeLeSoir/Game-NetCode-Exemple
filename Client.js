@@ -1,6 +1,6 @@
 let LocalID = -1;
 
-const ip = "http://localhost";
+const ip = "http://game-netcode-exemple.railway.internal";
 const port = 3030;
 
 const REQ_ConnexionJOIN = 0;

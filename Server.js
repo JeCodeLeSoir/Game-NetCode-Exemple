@@ -1,8 +1,10 @@
 const server = require("ws");
 const WebSocket = server.Server;
 
+const port = Number(process.env.PORT)
+
 const wss = new WebSocket({
-  port: 3030,
+  port: port,
 });
 
 const REQ_ConnexionJOIN = 0;
@@ -119,5 +121,5 @@ wss.on("connection", (ws) => {
 })
 
 wss.on("listening", () => {
-  console.log("Server started on port 3030");
+  console.log("Server started on port : " + port);
 });
